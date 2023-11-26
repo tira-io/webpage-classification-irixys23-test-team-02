@@ -23,6 +23,7 @@ def load_model(model_file):
 def main(input_file, output_dir, model_file):
     # Load datasets
     test_data = load_data(input_file)
+    print('hello world')
 
     # Preprocess the content
     test_data['url'] = test_data['url'].apply(preprocess)
